@@ -2,36 +2,36 @@
 let structTableTitles = []
 
 Hooks.on("i18nInit", () => structTableTitles = [
-  game.i18n.localize("LANCER-ALT-STRUCTURE.StructureTitles.crushingHit"),
-  game.i18n.localize("LANCER-ALT-STRUCTURE.StructureTitles.directHit"),
-  game.i18n.localize("LANCER-ALT-STRUCTURE.StructureTitles.systemTrauma"),
-  game.i18n.localize("LANCER-ALT-STRUCTURE.StructureTitles.systemTrauma"),
-  game.i18n.localize("LANCER-ALT-STRUCTURE.StructureTitles.systemTrauma"),
-  game.i18n.localize("LANCER-ALT-STRUCTURE.StructureTitles.glancingBlow"),
-  game.i18n.localize("LANCER-ALT-STRUCTURE.StructureTitles.glancingBlow"),
+  game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureTitles.crushingHit"),
+  game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureTitles.directHit"),
+  game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureTitles.systemTrauma"),
+  game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureTitles.systemTrauma"),
+  game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureTitles.systemTrauma"),
+  game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureTitles.glancingBlow"),
+  game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureTitles.glancingBlow"),
 ])
 
 function structTableDescriptions(roll, remStruct) {
   switch (roll) {
     // Used for multiple ones
     case 0:
-      return game.i18n.localize("LANCER-ALT-STRUCTURE.StructureDescriptions.crushingHit");
+      return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureDescriptions.crushingHit");
     case 1:
       switch (remStruct) {
         case 2:
-          return game.i18n.localize("LANCER-ALT-STRUCTURE.StructureDescriptions.directHit.two");
+          return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureDescriptions.directHit.two");
         case 1:
-          return game.i18n.localize("LANCER-ALT-STRUCTURE.StructureDescriptions.directHit.one");
+          return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureDescriptions.directHit.one");
         default:
-          return game.i18n.localize("LANCER-ALT-STRUCTURE.StructureDescriptions.directHit.base");
+          return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureDescriptions.directHit.base");
       }
     case 2:
     case 3:
     case 4:
-      return game.i18n.localize("LANCER-ALT-STRUCTURE.StructureDescriptions.systemTrauma");
+      return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureDescriptions.systemTrauma");
     case 5:
     case 6:
-      return game.i18n.localize("LANCER-ALT-STRUCTURE.StructureDescriptions.glancingBlow");
+      return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StructureDescriptions.glancingBlow");
   }
   return "";
 }

@@ -1,35 +1,35 @@
 
 let stressTableTitles = []
 Hooks.on("i18nInit", () => stressTableTitles = [
-    game.i18n.localize("LANCER-ALT-STRUCTURE.StressTitles.criticalFail"),
-    game.i18n.localize("LANCER-ALT-STRUCTURE.StressTitles.meltdown"),
-    game.i18n.localize("LANCER-ALT-STRUCTURE.StressTitles.powerFail"),
-    game.i18n.localize("LANCER-ALT-STRUCTURE.StressTitles.powerFail"),
-    game.i18n.localize("LANCER-ALT-STRUCTURE.StressTitles.powerFail"),
-    game.i18n.localize("LANCER-ALT-STRUCTURE.StressTitles.emergencyShunt"),
-    game.i18n.localize("LANCER-ALT-STRUCTURE.StressTitles.emergencyShunt"),
+    game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressTitles.criticalFail"),
+    game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressTitles.meltdown"),
+    game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressTitles.powerFail"),
+    game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressTitles.powerFail"),
+    game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressTitles.powerFail"),
+    game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressTitles.emergencyShunt"),
+    game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressTitles.emergencyShunt"),
   ])
   function stressTableDescriptions(roll, remStress) {
     switch (roll) {
       // Used for multiple ones
       case 0:
-        return game.i18n.localize("LANCER-ALT-STRUCTURE.StressDescriptions.criticalFail");
+        return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressDescriptions.criticalFail");
       case 1:
         switch (remStress) {
           case 2:
-            return game.i18n.localize("LANCER-ALT-STRUCTURE.StressDescriptions.meltdown.two");
+            return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressDescriptions.meltdown.two");
           case 1:
-            return game.i18n.localize("LANCER-ALT-STRUCTURE.StressDescriptions.meltdown.one");
+            return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressDescriptions.meltdown.one");
           default:
-            return game.i18n.localize("LANCER-ALT-STRUCTURE.StressDescriptions.meltdown.base");
+            return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressDescriptions.meltdown.base");
         }
       case 2:
       case 3:
       case 4:
-        return game.i18n.localize("LANCER-ALT-STRUCTURE.StressDescriptions.powerFail");
+        return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressDescriptions.powerFail");
       case 5:
       case 6:
-        return game.i18n.localize("LANCER-ALT-STRUCTURE.StressDescriptions.emergencyShunt");
+        return game.i18n.localize("LANCER-ALT-STRUCTURE-GM-COLTON.StressDescriptions.emergencyShunt");
     }
     return "";
   }
