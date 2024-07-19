@@ -19,7 +19,7 @@
       "name": "Kaffo",
       "url": "https://github.com/kaffo/",
       "discord": "kaffo"
-    }
+    },
     {
       "name": "DirkMcThermot",
       "url": "https://github.com/DirkMcThermot",
@@ -49,8 +49,8 @@
     }
   ],
   "url": "https://github.com/DirkMcThermot/lancer-alt-structure-gm-colton.git",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
+  "manifest": "#MANIFEST#",
+  "download": "#DOWNLOAD#",
   "license": "LICENSE",
   "readme": "README.md",
   "media": [
